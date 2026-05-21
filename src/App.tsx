@@ -12,7 +12,7 @@ import ContactModal from "./components/ContactModal";
 type TabName = "Home" | "Education" | "Experience" | "Awards" | "Service";
 
 export default function App() {
-  const [currentTab, setCurrentTab] = useState<TabName>("Education"); // Matches the first mockup load page from the prompt ("Education")
+  const [currentTab, setCurrentTab] = useState<TabName>("Home");
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
