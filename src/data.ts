@@ -2,7 +2,6 @@ import { EducationItem, CaseCompetition, Scholarship, ExperienceItem, Methodolog
 import intermountainLogo from "./assets/images/intermountain_logo_1779308551200.png";
 import ldsChurchLogo from "./assets/images/lds_church_logo_1779308564641.png";
 import castleSportsLogo from "./assets/images/castle_sports_logo_1779308578750.png";
-import trustEdgeLogo from "./assets/images/trust_edge_logo_1779309617010.png";
 import byuLogo from "./assets/images/byu_logo_1779309633394.png";
 import stemLogo from "./assets/images/Stem.jpg";
 import walmartLogo from "./assets/images/walmart_logo_1779310805890.png";
@@ -101,19 +100,6 @@ export const experienceData: ExperienceItem[] = [
       "Calculate and record depreciation schedules on capital equipment per university accounting standards."
     ],
     skills: ["Budgeting", "Financial Reporting", "ERP Systems"]
-  },
-  {
-    id: "trust-edge",
-    organization: "Trust Edge",
-    role: "Finance/Marketing Intern",
-    period: "Apr 2026 — Present",
-    isCurrent: true,
-    logo: trustEdgeLogo,
-    bullets: [
-      "Analyze financial projection models forecasting costs and revenue to guide startup strategy and investor decisions.",
-      "Develop marketing materials and client outreach strategies to support early-stage company growth."
-    ],
-    skills: ["Finance Modeling", "Market Strategy"]
   },
   {
     id: "precoa",
