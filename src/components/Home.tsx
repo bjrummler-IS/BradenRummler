@@ -99,7 +99,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
               <h3 className="font-sans text-xl font-bold text-primary group-hover:text-secondary transition-colors mb-2">Education &amp; Strategy</h3>
               <p className="font-serif text-sm text-ink-medium">
-                Review academic credentials at BYU, including a 3.64 Cumulative GPA, Half-Tuition Scholarship, and honors in Walmart and Sunoco Case Competitions.
+                Review academic credentials at BYU, scholarships, and Walmart and Sunoco Case Competitions.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-outline-variant/30 flex items-center gap-2">
@@ -125,7 +125,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
               <h3 className="font-sans text-xl font-bold text-primary group-hover:text-secondary transition-colors mb-2">Professional Experience</h3>
               <p className="font-serif text-sm text-ink-medium">
-                Read on operational contributions at Intermountain Healthcare (Six Sigma dashboards), BYU Life Science accounting support, and logistical leadership.
+                Explore operational contributions at Intermountain Healthcare (Six Sigma dashboards), BYU Life Science accounting support, management, and other work experience.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-outline-variant/30 flex items-center gap-2">
@@ -151,7 +151,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
               <h3 className="font-sans text-xl font-bold text-primary group-hover:text-secondary transition-colors mb-2">Awards &amp; Expertise</h3>
               <p className="font-serif text-sm text-ink-medium">
-                Verify leadership certifications like Boy Scouts Eagle Scout, native Portuguese language fluency, St. George Marathon endurance achievements, and methodology cores.
+                View leadership certifications like Boy Scouts Eagle Scout, native Portuguese language fluency, St. George Marathon and Bass Lake Triathlon endurance achievements.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-outline-variant/30 flex items-center gap-2">
@@ -177,7 +177,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
               <h3 className="font-sans text-xl font-bold text-primary group-hover:text-secondary transition-colors mb-2">Leadership &amp; Philanthropy</h3>
               <p className="font-serif text-sm text-ink-medium">
-                Explore dedicated civic service from directing operations across South America (Recife, Brazil) to governing local youth forums (Alpine City Youth Council).
+                Explore dedicated service across South America (Recife, Brazil) to participating in local civic leadership (Alpine City Youth Council).
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-outline-variant/30 flex items-center gap-2">
