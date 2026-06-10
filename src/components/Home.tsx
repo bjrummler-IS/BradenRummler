@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import headshot from "../assets/images/Headshot2.png";
 
 interface HomeProps {
   onNavigate: (tab: string) => void;
@@ -16,13 +15,6 @@ export default function Home({ onNavigate }: HomeProps) {
     >
       {/* Hero Profile Intro Section */}
       <section className="text-center md:text-left py-4">
-        <div className="flex items-center gap-6 mb-6">
-          <img
-            src={headshot}
-            alt="Braden Rummler"
-            className="w-24 h-24 rounded-full object-cover border-4 border-sky-tint shadow-md shrink-0"
-          />
-        </div>
         <div className="max-w-3xl">
           <motion.span 
             initial={{ opacity: 0 }}
