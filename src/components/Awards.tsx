@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import { methodologies } from "../data";
 
 export default function Awards() {
   return (
@@ -132,33 +131,6 @@ export default function Awards() {
 
       </div>
 
-      {/* Professional Methodology */}
-      <section className="space-y-8 pt-4">
-        <h2 className="font-sans text-2xl sm:text-3xl font-extrabold text-primary text-center tracking-tight">
-          Professional Methodology
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {methodologies.map((method) => (
-            <div
-              key={method.id}
-              className="p-6 bg-white border border-outline-variant/20 rounded-xl text-center relative hover:shadow-md transition-shadow flex flex-col items-center"
-            >
-              <div className="absolute left-0 top-4 bottom-4 w-0.5 bg-primary rounded-full"></div>
-              <div className="w-11 h-11 bg-sky-tint/40 rounded-full flex items-center justify-center mb-4 border border-sky-tint/20">
-                <span className="material-symbols-outlined text-primary text-xl">
-                  {method.icon}
-                </span>
-              </div>
-              <h3 className="font-sans text-lg font-bold text-primary mb-2">
-                {method.title}
-              </h3>
-              <p className="font-serif text-sm text-ink-medium leading-relaxed">
-                {method.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
     </motion.div>
   );
 }
