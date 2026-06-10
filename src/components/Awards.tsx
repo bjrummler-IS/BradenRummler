@@ -85,11 +85,35 @@ export default function Awards() {
               Official Finisher — 2022. Completed a full 26.2-mile marathon, demonstrating discipline, endurance, and commitment to long-term goals.
             </p>
           </div>
-          <div className="mt-8 bg-white/70 p-3.5 rounded font-sans text-xs text-primary flex items-center gap-2.5 border border-outline-variant/20">
-            <span className="material-symbols-outlined text-base text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>
-              military_tech
+        </div>
+
+        {/* Bass Lake Sprint Triathlon */}
+        <div className="md:col-span-8 bg-[#F1F5F9] p-6 rounded-xl custom-shadow border-l-4 border-secondary flex flex-col justify-between">
+          <div className="space-y-4">
+            <span className="material-symbols-outlined text-secondary text-3xl" style={{ fontVariationSettings: "'FILL' 0, 'wght' 300" }}>
+              pool
             </span>
-            <span className="font-bold">Marathon Finisher · 2022</span>
+            <div className="flex flex-wrap items-center gap-3">
+              <h3 className="font-sans text-xl font-bold tracking-tight text-primary">Bass Lake Sprint Triathlon</h3>
+              <span className="inline-block px-3 py-0.5 bg-secondary/10 text-secondary font-sans font-bold text-xs rounded-full uppercase tracking-wider">2nd Place · 20–24 Male · 2026</span>
+            </div>
+            <p className="font-serif text-sm text-ink-medium leading-relaxed">
+              Finished 2nd in the 20–24 Male Division at the Bass Lake Sprint Triathlon, completing all three disciplines back-to-back without rest.
+            </p>
+            <div className="flex flex-wrap gap-3 pt-1">
+              <div className="flex items-center gap-1.5 font-sans text-xs font-bold text-primary bg-white/70 px-3 py-1.5 rounded border border-outline-variant/20">
+                <span className="material-symbols-outlined text-sm text-secondary">pool</span>
+                800M Swim
+              </div>
+              <div className="flex items-center gap-1.5 font-sans text-xs font-bold text-primary bg-white/70 px-3 py-1.5 rounded border border-outline-variant/20">
+                <span className="material-symbols-outlined text-sm text-secondary">directions_bike</span>
+                20K Bike
+              </div>
+              <div className="flex items-center gap-1.5 font-sans text-xs font-bold text-primary bg-white/70 px-3 py-1.5 rounded border border-outline-variant/20">
+                <span className="material-symbols-outlined text-sm text-secondary">directions_run</span>
+                5K Run
+              </div>
+            </div>
           </div>
         </div>
 
@@ -103,15 +127,6 @@ export default function Awards() {
             <p className="font-serif text-sm opacity-90 leading-relaxed">
               Professional proficiency in Portuguese (Reading, Writing, Speaking) gained through 2 years of daily immersion while living in Recife, Brazil.
             </p>
-          </div>
-          <div className="mt-8 border-t border-white/10 pt-4">
-            <div className="flex justify-between items-end text-sm">
-              <span className="font-sans text-xs uppercase tracking-widest font-semibold opacity-80">Portuguese</span>
-              <span className="font-sans font-bold text-white">Professional</span>
-            </div>
-            <div className="w-full bg-white/20 h-1.5 mt-2 rounded-full overflow-hidden">
-              <div className="bg-[#6bbdff] h-full w-[90%] rounded-full"></div>
-            </div>
           </div>
         </div>
 
