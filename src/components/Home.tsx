@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import headshot from "../assets/images/Headshot2.png";
 
 interface HomeProps {
   onNavigate: (tab: string) => void;
@@ -15,6 +16,13 @@ export default function Home({ onNavigate }: HomeProps) {
     >
       {/* Hero Profile Intro Section */}
       <section className="text-center md:text-left py-4">
+        <div className="flex items-center gap-6 mb-6">
+          <img
+            src={headshot}
+            alt="Braden Rummler"
+            className="w-24 h-24 rounded-full object-cover border-4 border-sky-tint shadow-md shrink-0"
+          />
+        </div>
         <div className="max-w-3xl">
           <motion.span 
             initial={{ opacity: 0 }}
@@ -54,11 +62,13 @@ export default function Home({ onNavigate }: HomeProps) {
               <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
             </button>
             <a
-              href="mailto:Bjrummler@gmail.com"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-2 border-primary/20 hover:border-primary text-primary px-6 py-3 rounded-lg font-sans font-semibold text-sm tracking-wide transition-all flex items-center justify-center gap-2 bg-white/40 hover:bg-white/90 cursor-pointer"
             >
-              <span className="material-symbols-outlined text-sm">mail</span>
-              Bjrummler@gmail.com
+              <span className="material-symbols-outlined text-sm">description</span>
+              View Resume
             </a>
             <a
               href="https://www.linkedin.com/in/braden-rummler/"
