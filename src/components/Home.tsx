@@ -38,7 +38,7 @@ export default function Home({ onNavigate }: HomeProps) {
             transition={{ delay: 0.25 }}
             className="font-serif text-lg md:text-xl text-ink-medium leading-relaxed"
           >
-            Welcome. I am Braden Rummler, a Pre-Business &amp; Healthcare Leadership student at Brigham Young University. I am passionate about learning and developing my human capital to make a positive impact in the world. I have a strong background in healthcare operations, continuous improvement, and leadership, and I am eager to apply my skills and knowledge to help organizations achieve their goals. Please explore my portfolio to learn more about my education, experience, awards, and service.
+            Welcome. I am Braden Rummler, a Pre-Business &amp; Healthcare Leadership student at Brigham Young University. I am passionate about learning and developing my human capital to make a positive impact in the world. I have a strong background in healthcare operations, finance, accounting, Excel, and leadership, and I am eager to apply my skills and knowledge to help organizations achieve their goals. Please explore my portfolio to learn more about my education, experience, awards, and service.
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
