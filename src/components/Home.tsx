@@ -87,15 +87,14 @@ export default function Home({ onNavigate }: HomeProps) {
           >
             {/* Offset navy square behind the image */}
             <div className="absolute -bottom-4 -right-4 w-full h-full bg-[#002b5a] rounded-2xl"></div>
-            {/* Accent corner dots */}
+            {/* Accent corner dot */}
             <div className="absolute -top-2 -left-2 w-4 h-4 bg-sky-tint/60 rounded-full z-20"></div>
-            <div className="absolute -top-2 -right-6 w-2.5 h-2.5 bg-[#006398]/40 rounded-full z-20"></div>
             {/* Image */}
             <div className="relative z-10 w-56 h-56 md:w-68 md:h-68 lg:w-72 lg:h-72 rounded-2xl overflow-hidden ring-4 ring-[#002b5a] shadow-2xl">
               <img
                 src={headshot}
                 alt="Braden Rummler"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover" style={{ objectPosition: '50% 15%' }}
               />
             </div>
           </motion.div>
