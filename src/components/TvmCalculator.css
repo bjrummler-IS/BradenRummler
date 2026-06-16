@@ -1,0 +1,268 @@
+/* Fonts already loaded by DailyLabel.css — no duplicate @import needed */
+
+.tvm-root {
+  --tvm-bg: #232220;
+  --tvm-bg-alt: #2A2825;
+  --tvm-paper: #F7F4ED;
+  --tvm-ink: #1C1B19;
+  --tvm-ink-soft: rgba(28, 27, 25, 0.65);
+  --tvm-cream: #F2EEE3;
+  --tvm-cream-dim: rgba(242, 238, 227, 0.62);
+  --tvm-gold: #D9A23B;
+  --tvm-font-display: 'Archivo Narrow', sans-serif;
+  --tvm-font-body: 'Source Serif 4', Georgia, serif;
+  --tvm-font-mono: 'JetBrains Mono', monospace;
+
+  background: var(--tvm-bg);
+  color: var(--tvm-cream);
+  font-family: var(--tvm-font-body);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  margin-bottom: -4rem;
+}
+
+.tvm-section {
+  padding: 52px 32px 52px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tvm-eyebrow {
+  font-family: var(--tvm-font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--tvm-gold);
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+}
+
+.tvm-h1 {
+  font-family: var(--tvm-font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  margin-bottom: 10px;
+  letter-spacing: 0.01em;
+  color: var(--tvm-cream);
+}
+
+.tvm-section-sub {
+  color: var(--tvm-cream-dim);
+  max-width: 600px;
+  margin-bottom: 36px;
+  font-family: var(--tvm-font-body);
+  font-size: 1rem;
+}
+
+/* ---- CALC GRID ---- */
+.tvm-calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.tvm-calc-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ---- FIELDS ---- */
+.tvm-field-label {
+  display: block;
+  font-family: var(--tvm-font-mono);
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  margin-bottom: 8px;
+  color: var(--tvm-gold);
+}
+
+.tvm-field-caption {
+  font-size: 0.78rem;
+  color: var(--tvm-cream-dim);
+  margin-top: 8px;
+  font-family: var(--tvm-font-body);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.tvm-input {
+  width: 100%;
+  background: var(--tvm-bg-alt);
+  border: 2px solid var(--tvm-cream-dim);
+  color: var(--tvm-cream);
+  font-family: var(--tvm-font-mono);
+  padding: 11px 12px;
+  font-size: 0.95rem;
+}
+
+.tvm-input:focus {
+  border-color: var(--tvm-gold);
+  outline: none;
+}
+
+/* ---- TOGGLES ---- */
+.tvm-toggle-group {
+  display: flex;
+  gap: 8px;
+}
+
+.tvm-toggle-btn {
+  flex: 1;
+  padding: 11px 6px;
+  border: 2px solid var(--tvm-cream-dim);
+  background: transparent;
+  color: var(--tvm-cream);
+  font-family: var(--tvm-font-mono);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.tvm-toggle-btn:hover { border-color: var(--tvm-gold); }
+
+.tvm-toggle-btn[data-active='true'] {
+  background: var(--tvm-gold);
+  border-color: var(--tvm-gold);
+  color: var(--tvm-ink);
+  font-weight: 700;
+}
+
+/* ---- STICKY PANEL ---- */
+.tvm-sticky {
+  position: sticky;
+  top: 96px;
+}
+
+/* ---- LABEL PANEL ---- */
+.tvm-label-panel {
+  background: var(--tvm-paper);
+  color: var(--tvm-ink);
+  border: 3px solid var(--tvm-ink);
+  padding: 24px;
+  font-family: var(--tvm-font-mono);
+  transition: box-shadow 0.3s ease;
+}
+
+.tvm-label-panel.tvm-updated {
+  box-shadow: 0 0 0 4px var(--tvm-gold);
+}
+
+.tvm-label-title {
+  font-family: var(--tvm-font-display);
+  font-weight: 900;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  border-bottom: 8px solid var(--tvm-ink);
+  padding-bottom: 10px;
+  margin-bottom: 6px;
+}
+
+.tvm-label-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 0;
+  font-size: 0.92rem;
+}
+
+.tvm-lr-dots {
+  flex: 1;
+  border-bottom: 1px dotted var(--tvm-ink-soft);
+  transform: translateY(-4px);
+}
+
+.tvm-lr-value {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.tvm-label-row.tvm-solved .tvm-lr-value {
+  color: var(--tvm-gold);
+}
+
+.tvm-label-divider {
+  border: none;
+  border-top: 1px solid var(--tvm-ink);
+  margin: 4px 0;
+}
+
+.tvm-label-divider.tvm-thick {
+  border-top-width: 8px;
+  margin: 8px 0;
+}
+
+.tvm-label-footnote {
+  font-size: 0.72rem;
+  color: var(--tvm-ink-soft);
+  margin-top: 10px;
+  line-height: 1.45;
+  font-family: var(--tvm-font-body);
+  font-style: italic;
+}
+
+.tvm-result-display {
+  font-family: var(--tvm-font-display);
+  font-weight: 900;
+  font-size: clamp(2rem, 8vw, 3rem);
+  text-align: center;
+  padding: 6px 0;
+}
+
+.tvm-unit {
+  font-size: 0.95rem;
+  font-family: var(--tvm-font-mono);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-left: 6px;
+}
+
+/* ---- FOOTER NOTE ---- */
+.tvm-footer-note {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 3px solid var(--tvm-cream);
+  text-align: center;
+  font-family: var(--tvm-font-mono);
+  font-size: 0.78rem;
+  color: var(--tvm-cream-dim);
+}
+
+.tvm-barcode {
+  width: 130px;
+  height: 36px;
+  margin: 0 auto 16px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--tvm-cream) 0 2px,
+    transparent 2px 5px,
+    var(--tvm-cream) 5px 8px,
+    transparent 8px 12px,
+    var(--tvm-cream) 12px 15px,
+    transparent 15px 20px,
+    var(--tvm-cream) 20px 23px,
+    transparent 23px 27px
+  );
+}
+
+.tvm-footer-note p { max-width: 520px; margin: 0 auto; line-height: 1.7; }
+.tvm-footer-note p + p { margin-top: 8px; }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 880px) {
+  .tvm-calc-grid { grid-template-columns: 1fr; }
+  .tvm-sticky { position: static; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tvm-root * { transition: none !important; }
+}
