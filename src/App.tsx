@@ -10,7 +10,7 @@ import Service from "./components/Service";
 import DailyLabel from "./components/DailyLabel";
 import ContactModal from "./components/ContactModal";
 
-type TabName = "Home" | "Education" | "Experience" | "Awards" | "Service" | "Daily Label";
+type TabName = "Home" | "Education" | "Experience" | "Awards" | "Service" | "Macro Calculator";
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<TabName>("Home");
@@ -37,7 +37,7 @@ export default function App() {
         return <Awards />;
       case "Service":
         return <Service />;
-      case "Daily Label":
+      case "Macro Calculator":
         return <DailyLabel />;
       default:
         return <Education />;
@@ -59,7 +59,7 @@ export default function App() {
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center space-x-8 pr-1">
-            {(["Home", "Education", "Experience", "Awards", "Service", "Daily Label"] as TabName[]).map((tab) => {
+            {(["Home", "Education", "Experience", "Awards", "Service", "Macro Calculator"] as TabName[]).map((tab) => {
               const isActive = currentTab === tab;
               return (
                 <button
@@ -109,7 +109,7 @@ export default function App() {
               className="md:hidden bg-white border-t border-outline-variant/30 overflow-hidden"
             >
               <div className="px-6 py-4 flex flex-col gap-4">
-                {(["Home", "Education", "Experience", "Awards", "Service", "Daily Label"] as TabName[]).map((tab) => {
+                {(["Home", "Education", "Experience", "Awards", "Service", "Macro Calculator"] as TabName[]).map((tab) => {
                   const isActive = currentTab === tab;
                   return (
                     <button

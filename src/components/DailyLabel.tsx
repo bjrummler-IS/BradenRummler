@@ -54,6 +54,7 @@ export default function DailyLabel() {
   const [bodyCompEnabled, setBodyCompEnabled] = useState(false);
   const [bodyFatPct, setBodyFatPct] = useState(18);
   const [bfTouched, setBfTouched] = useState(false);
+  const [proteinHeavy, setProteinHeavy] = useState(false);
   const [flash, setFlash] = useState(false);
   const flashTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const prevKey = useRef('');
@@ -108,7 +109,9 @@ export default function DailyLabel() {
       goalNote = 'Matches your estimated daily energy expenditure.';
     }
 
-    const proteinG = bodyCompEnabled ? proteinPerUnit * lbmKg : proteinPerUnit * weightKg;
+    const proteinG = proteinHeavy
+      ? parseFloat(weightLb)
+      : bodyCompEnabled ? proteinPerUnit * lbmKg : proteinPerUnit * weightKg;
     const proteinCal = proteinG * 4;
     const fatCal = calories * fatPct;
     const fatG = fatCal / 9;
@@ -290,6 +293,26 @@ export default function DailyLabel() {
                   )
                 )}
               </div>
+            </div>
+
+            {/* Protein Heavy */}
+            <div>
+              <span className="dlp-field-label">Protein Override</span>
+              <div className="dlp-toggle-group">
+                <button
+                  type="button"
+                  className="dlp-toggle-btn"
+                  data-active={proteinHeavy ? 'true' : undefined}
+                  onClick={() => setProteinHeavy(p => !p)}
+                >
+                  {proteinHeavy ? 'Protein Heavy ✓' : 'Go Protein Heavy'}
+                </button>
+              </div>
+              {proteinHeavy && (
+                <p className="dlp-bf-desc" style={{ marginTop: '10px' }}>
+                  Protein set to 1 g per lb of bodyweight. Carbs absorb the remaining calories after fat.
+                </p>
+              )}
             </div>
 
             {/* Body Composition */}
