@@ -51,7 +51,7 @@
 
 .tvm-section-sub {
   color: var(--tvm-cream-dim);
-  max-width: 600px;
+  max-width: 620px;
   margin-bottom: 36px;
   font-family: var(--tvm-font-body);
   font-size: 1rem;
@@ -112,6 +112,14 @@
   gap: 8px;
 }
 
+.tvm-toggle-group.tvm-wrap {
+  flex-wrap: wrap;
+}
+
+.tvm-toggle-group.tvm-wrap .tvm-toggle-btn {
+  flex: 1 1 140px;
+}
+
 .tvm-toggle-btn {
   flex: 1;
   padding: 11px 6px;
@@ -120,8 +128,8 @@
   color: var(--tvm-cream);
   font-family: var(--tvm-font-mono);
   text-transform: uppercase;
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
@@ -133,6 +141,44 @@
   border-color: var(--tvm-gold);
   color: var(--tvm-ink);
   font-weight: 700;
+}
+
+/* ---- LEARN BOX ---- */
+.tvm-learn-box {
+  background: var(--tvm-bg-alt);
+  border-left: 3px solid var(--tvm-gold);
+  padding: 14px 16px;
+}
+
+.tvm-learn-title {
+  font-family: var(--tvm-font-mono);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--tvm-gold);
+  margin-bottom: 6px;
+}
+
+.tvm-learn-body {
+  font-size: 0.88rem;
+  color: var(--tvm-cream-dim);
+  line-height: 1.55;
+}
+
+/* ---- BENCHMARK BOX ---- */
+.tvm-benchmark-box {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 2px dashed var(--tvm-cream-dim);
+}
+
+.tvm-benchmark-label {
+  font-family: var(--tvm-font-mono);
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--tvm-gold);
+  margin-bottom: 8px;
 }
 
 /* ---- STICKY PANEL ---- */
@@ -212,17 +258,17 @@
 .tvm-result-display {
   font-family: var(--tvm-font-display);
   font-weight: 900;
-  font-size: clamp(2rem, 8vw, 3rem);
+  font-size: clamp(1.8rem, 7vw, 2.8rem);
   text-align: center;
   padding: 6px 0;
 }
 
 .tvm-unit {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-family: var(--tvm-font-mono);
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   margin-left: 6px;
 }
 
