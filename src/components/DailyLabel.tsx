@@ -109,8 +109,9 @@ export default function DailyLabel() {
       goalNote = 'Matches your estimated daily energy expenditure.';
     }
 
+    const proteinBaseLbs = bodyCompEnabled ? lbmKg / 0.453592 : parseFloat(weightLb);
     const proteinG = proteinHeavy
-      ? parseFloat(weightLb)
+      ? proteinBaseLbs
       : bodyCompEnabled ? proteinPerUnit * lbmKg : proteinPerUnit * weightKg;
     const proteinCal = proteinG * 4;
     const fatCal = calories * fatPct;
@@ -310,7 +311,9 @@ export default function DailyLabel() {
               </div>
               {proteinHeavy && (
                 <p className="dlp-bf-desc" style={{ marginTop: '10px' }}>
-                  Protein set to 1 g per lb of bodyweight. Carbs absorb the remaining calories after fat.
+                  {bodyCompEnabled
+                    ? 'Protein set to 1 g per lb of lean body mass. Carbs absorb the remaining calories after fat.'
+                    : 'Protein set to 1 g per lb of lean body mass. Enable body composition above to calculate your lean mass — using total bodyweight as a fallback until then.'}
                 </p>
               )}
             </div>
